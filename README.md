@@ -30,10 +30,10 @@ npm install
 Copy `.env.example` to `.env.local`:
 
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
+API_URL=http://localhost:5000
 ```
 
-`NEXT_PUBLIC_API_URL` is the Express base URL used by Next rewrites for `/api/*`.
+`API_URL` is the Express base URL used by Next rewrites for `/api/*` (server-side only; not exposed to the browser).
 
 ### 3. Run
 
