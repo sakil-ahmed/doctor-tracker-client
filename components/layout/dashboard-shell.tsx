@@ -44,7 +44,9 @@ export function DashboardShell({ children }: DashboardShellProps) {
             {children}
           </div>
         </div>
-        <MobileBottomNav />
+        <Suspense fallback={null}>
+          <MobileBottomNav />
+        </Suspense>
       </div>
     </div>
   );
